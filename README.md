@@ -47,7 +47,12 @@ Data Analysis Using Power BI
 
 1. Formula to create norm_amount column
 
-`= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
+`= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any**)`
+
+<b>A screenshot of the project in Power BI</b>
+
+![Report](https://user-images.githubusercontent.com/73351827/130736715-f1530d63-ee4b-4ffe-89ad-3acb2bb15eba.PNG)
+
 
 
 
